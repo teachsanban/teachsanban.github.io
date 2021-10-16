@@ -9,6 +9,29 @@ a:link{color:red;text-decoration:overline}
 a:visited{color:yellow}
 a:hover{color:grey}
 a:active{color:green}
+  
+  * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
 </style>
 </head>
 <body>
@@ -22,16 +45,24 @@ a:active{color:green}
 Hello
   </div>
 <center><h1> videos </h1></center>
-<h2>Madhav sold a toy car at a loss of 5%.</h2>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/qpJ3ciNoNvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-<h2>In a mathematics paper there are 10 problems.</h2>
-  <div style="flex:left">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VRzNVDQi5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <h2>A number has two digits whose sum is 9 (two methods)</h2>
+ <h2>A number has two digits whose sum is 9 (two methods)</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/JooC2fltYxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <h2>Whether sentence is statement or question</h2>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/BWnOevYQXFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <h2>Madhav sold a toy car at a loss of 5%.</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qpJ3ciNoNvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="flex-item-right">
+      <h2>In a mathematics paper there are 10 problems.</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VRzNVDQi5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  
     </body></html>
