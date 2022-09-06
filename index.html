@@ -185,7 +185,29 @@ function closeNav() {
     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Science')">Science</button>
     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Maths')">Maths</button>
 <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'English')">English</button>
- 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<button onclick="myFunction()"><img src="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-black-eclipse-of-the-sun-icon-isolated-on-white-background-png-image_4860607.png" width="50px" height="50px"></button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
   </div>
  </body>
  
